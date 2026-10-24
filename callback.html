@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Cortes AI · retorno do TikTok</title>
+<style>
+  body { font-family: system-ui, sans-serif; background: #14171c; color: #e8eaee; display: grid; place-items: center; min-height: 100vh; margin: 0; }
+  main { text-align: center; padding: 24px; }
+  a { color: #f5b301; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Voltando para o Cortes AI…</h1>
+  <p id="msg">Se nada acontecer, <a id="link" href="http://localhost:8080/auth/tiktok/callback">clique aqui</a>.</p>
+</main>
+<script>
+  // O TikTok só aceita endereços https públicos como retorno do login.
+  // Esta página recebe o código e repassa para o servidor local do Cortes AI.
+  var destino = 'http://localhost:8080/auth/tiktok/callback' + window.location.search;
+  document.getElementById('link').href = destino;
+  window.location.replace(destino);
+</script>
+</body>
+</html>
