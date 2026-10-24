@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Termos do Cortes AI</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+  /* Layout: documento de uma coluna, cabeçalho industrial âmbar, dois capítulos com âncoras. */
+  :root {
+    --bg: #f6f4ee;
+    --surface: #ffffff;
+    --fg: #1b1d22;
+    --muted: #5f6572;
+    --line: #d9d5c9;
+    --accent: #c98a00;
+    --font-display: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1114; --surface: #171a1f; --fg: #e8eaee; --muted: #9aa2b0; --line: #2b313c; --accent: #f5b301;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1114; --surface: #171a1f; --fg: #e8eaee; --muted: #9aa2b0; --line: #2b313c; --accent: #f5b301;
+    color-scheme: dark;
+  }
+  body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 16px; line-height: 1.6; }
+  .wrap { max-width: 720px; margin: 0 auto; padding-block: 32px 64px; padding-inline: 20px; }
+  header { border-left: 6px solid var(--accent); padding-left: 16px; margin-bottom: 32px; }
+  header h1 { font-family: var(--font-display); font-size: 40px; line-height: 1; margin: 0 0 6px; text-transform: uppercase; letter-spacing: .5px; text-wrap: balance; }
+  header p { margin: 0; color: var(--muted); }
+  nav { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 28px; }
+  nav a { color: var(--fg); text-decoration: none; border: 1px solid var(--line); background: var(--surface); padding: 6px 12px; border-radius: 999px; font-size: 14px; font-weight: 600; }
+  nav a:hover, nav a:focus-visible { border-color: var(--accent); outline: none; }
+  section { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 24px; margin-bottom: 20px; min-width: 0; }
+  section h2 { font-family: var(--font-display); font-size: 28px; text-transform: uppercase; margin: 0 0 12px; letter-spacing: .5px; }
+  section h3 { font-size: 17px; margin: 20px 0 6px; }
+  p, li { max-width: 65ch; }
+  ul { padding-left: 20px; }
+  .small { color: var(--muted); font-size: 14px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Cortes AI</h1>
+    <p>Termos de Uso e Política de Privacidade · Full Channal · vigência a partir de 23 de outubro de 2026</p>
+  </header>
+
+  <nav aria-label="Seções">
+    <a href="#termos">Termos de Uso</a>
+    <a href="#privacidade">Política de Privacidade</a>
+  </nav>
+
+  <section id="termos">
+    <h2>Termos de Uso</h2>
+    <p>O Cortes AI é uma ferramenta de uso interno operada por Full Channal. Ela ajuda o próprio criador a preparar vídeos curtos (cortes) e a publicá-los na conta de TikTok que ele mesmo autoriza. Não é oferecida ao público como serviço e não possui cadastro de terceiros.</p>
+
+    <h3>1. Quem pode usar</h3>
+    <p>Somente o operador da ferramenta e as contas de TikTok que ele conectar de forma expressa, por meio do login oficial do TikTok. A conexão pode ser desfeita a qualquer momento na própria ferramenta ou nas configurações de apps autorizados do TikTok.</p>
+
+    <h3>2. O que a ferramenta faz</h3>
+    <ul>
+      <li>Seleciona trechos de vídeos, gera título, legenda e hashtags.</li>
+      <li>Renderiza o corte em formato vertical com legendas.</li>
+      <li>Envia o corte para a conta de TikTok conectada, como publicação ou como rascunho na caixa de entrada, sempre por ação ou configuração do operador.</li>
+    </ul>
+
+    <h3>3. Conteúdo e direitos autorais</h3>
+    <p>O operador é o único responsável pelo conteúdo que publica, incluindo obter autorização dos criadores originais quando usar material de terceiros, e por cumprir as Diretrizes da Comunidade e os Termos de Serviço do TikTok e das plataformas de origem.</p>
+
+    <h3>4. Limitações</h3>
+    <p>A ferramenta é fornecida como está, sem garantia de disponibilidade ou de resultados. Falhas de publicação são exibidas ao operador para revisão manual.</p>
+
+    <h3>5. Alterações</h3>
+    <p>Estes termos podem ser atualizados; a versão vigente é sempre a publicada nesta página.</p>
+  </section>
+
+  <section id="privacidade">
+    <h2>Política de Privacidade</h2>
+    <p>Esta política descreve quais dados o Cortes AI acessa quando uma conta de TikTok é conectada e como eles são tratados.</p>
+
+    <h3>1. Dados acessados</h3>
+    <ul>
+      <li><strong>Informações básicas do perfil</strong> (escopo <code>user.info.basic</code>): identificador aberto, apelido e avatar, usados apenas para mostrar ao operador qual conta está conectada.</li>
+      <li><strong>Publicação de vídeos</strong> (escopo <code>video.publish</code>): usado exclusivamente para enviar os cortes produzidos para a conta conectada.</li>
+      <li><strong>Tokens de acesso</strong> fornecidos pelo TikTok, necessários para manter a conexão.</li>
+    </ul>
+
+    <h3>2. Onde os dados ficam</h3>
+    <p>Os tokens e os arquivos de vídeo ficam armazenados localmente, no computador do operador, em uma pasta da própria ferramenta. Nenhum dado é enviado a servidores da Full Channal nem a terceiros, exceto ao TikTok para realizar a publicação e a provedores de inteligência artificial, que recebem apenas o texto das transcrições para escolher trechos e redigir legendas.</p>
+
+    <h3>3. O que não fazemos</h3>
+    <ul>
+      <li>Não coletamos dados de espectadores, seguidores ou de outras contas.</li>
+      <li>Não vendemos, compartilhamos ou usamos os dados para publicidade.</li>
+      <li>Não lemos mensagens, comentários ou outras informações da conta além dos escopos listados.</li>
+    </ul>
+
+    <h3>4. Retenção e exclusão</h3>
+    <p>Os tokens são apagados ao desconectar a conta na ferramenta ou ao revogar o acesso nas configurações do TikTok. Os vídeos gerados podem ser apagados pelo operador a qualquer momento.</p>
+
+    <h3>5. Contato</h3>
+    <p>Dúvidas sobre estes documentos podem ser enviadas ao responsável pela organização Full Channal, por meio do perfil da organização no TikTok.</p>
+    <p class="small">Esta página existe para atender aos requisitos do TikTok for Developers para o app Cortes AI.</p>
+  </section>
+</div>
+</body>
+</html>
